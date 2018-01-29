@@ -102,10 +102,10 @@ int main()
 	cout << "WILL YOU GO FIRST?: "; cin >> first;
 	while(true)
 	{
-		check_siirto:
 		string siirto1, siirto2;
 		if(first)
 		{
+			check_siirto:
 			cout << "SIIRTO: ";
 			cin >> siirto1; cin >> siirto2;
 			if(checksiirto(siirto1, siirto2) == false) {cout << "INVALID MOVE\n"; goto check_siirto;}
